@@ -1,7 +1,7 @@
 @echo off
 setlocal
 
-if not exist dist\FourierDragApp\FourierDragApp.exe (
+if not exist dist\FourierPhaseVisualizer\FourierPhaseVisualizer.exe (
   echo App executable not found. Building it first...
   call build.bat
   if errorlevel 1 goto :error
@@ -29,13 +29,13 @@ if errorlevel 1 (
 )
 
 :found
-"%ISCC%" installer\FourierDragApp.iss
+"%ISCC%" installer\FourierPhaseVisualizer.iss
 if errorlevel 1 goto :error
 
 echo.
 echo Installer build complete.
 echo Share this file:
-echo   installer\Output\FourierDragApp-Setup.exe
+echo   installer\Output\FourierPhaseVisualizer-Setup.exe
 exit /b 0
 
 :error

@@ -275,7 +275,7 @@ class ArrayPanel(QFrame):
 class MainWindow(QMainWindow):
     def __init__(self) -> None:
         super().__init__()
-        self.setWindowTitle("Drag Square + Fourier Magnitude/Phase")
+        self.setWindowTitle("Fourier Phase Visualizer")
 
         root = QWidget()
         self.setCentralWidget(root)

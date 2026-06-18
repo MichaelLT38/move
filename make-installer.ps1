@@ -3,7 +3,7 @@ $ErrorActionPreference = 'Stop'
 $root = Split-Path -Parent $MyInvocation.MyCommand.Path
 Set-Location $root
 
-if (-not (Test-Path "dist\FourierDragApp\FourierDragApp.exe")) {
+if (-not (Test-Path "dist\FourierPhaseVisualizer\FourierPhaseVisualizer.exe")) {
     Write-Host "App executable not found. Building it first..."
     .\build.ps1
 }
@@ -35,9 +35,9 @@ if (-not $isccPath) {
 }
 
 Write-Host "Using Inno Setup compiler: $isccPath"
-& $isccPath "installer\FourierDragApp.iss"
+& $isccPath "installer\FourierPhaseVisualizer.iss"
 
 Write-Host ""
 Write-Host "Installer build complete."
 Write-Host "Share this file:"
-Write-Host "  installer\Output\FourierDragApp-Setup.exe"
+Write-Host "  installer\Output\FourierPhaseVisualizer-Setup.exe"

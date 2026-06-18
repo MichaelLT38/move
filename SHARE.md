@@ -21,7 +21,7 @@ build.bat
 
 Share:
 
-- `dist\\FourierDragApp\\` (share the full folder)
+- `dist\\FourierPhaseVisualizer\\` (share the full folder)
 
 ## Option 2: Installer EXE (recommended)
 
@@ -43,7 +43,7 @@ make-installer.bat
 
 Share:
 
-- `installer\\Output\\FourierDragApp-Setup.exe`
+- `installer\\Output\\FourierPhaseVisualizer-Setup.exe`
 
 Users run the setup file, click through the wizard, then launch from Start Menu/Desktop.
 

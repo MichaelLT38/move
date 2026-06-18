@@ -1,4 +1,4 @@
-# Fourier Drag App
+# Fourier Phase Visualizer
 
 Interactive desktop app to explore how translation, scaling, and rotation of a square affect its 2D Fourier transform.
 
@@ -30,7 +30,7 @@ python main.py
 
 Output:
 
-- dist\\FourierDragApp\\FourierDragApp.exe
+- dist\\FourierPhaseVisualizer\\FourierPhaseVisualizer.exe
 
 ## Build Installer (Recommended)
 
@@ -40,14 +40,14 @@ Output:
 
 Output:
 
-- installer\\Output\\FourierDragApp-Setup.exe
+- installer\\Output\\FourierPhaseVisualizer-Setup.exe
 
 ## GitHub Build And Release
 
 This repo includes a workflow at `.github/workflows/release-installer.yml` that:
 
 - Builds the installer on Windows
-- Uploads `FourierDragApp-Setup.exe` as a workflow artifact
+- Uploads `FourierPhaseVisualizer-Setup.exe` as a workflow artifact
 - On version tags (`v*`), creates a GitHub Release and attaches the setup exe
 
 ### Trigger A Release Build
